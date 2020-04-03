@@ -1,4 +1,8 @@
-def my_each(collection)
-   = []
-  while 
+def my_each(array)
+  i = 1 
+  while i < array
+  yield(array[i])
+  i = i + 1
+  end
+  array
 end
